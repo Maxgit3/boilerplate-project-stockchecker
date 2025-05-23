@@ -23,9 +23,10 @@ app.use(helmet.contentSecurityPolicy({
   directives: {
     defaultSrc: ["'self'"],
     styleSrc: ["'self'"],
-    scriptSrc: ["'self'"]
+    scriptSrc: ["'self'"],
   }
 }));
+
 // app.use(helmet.xssFilter());
 //Index page (static HTML)
 app.route('/')
