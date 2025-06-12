@@ -37,7 +37,7 @@ module.exports = function (app) {
         let returnLike = 0
         if (like && like === "true") {
           const existing = await StockLike.findOne({ stock, hashedIp });
-          console.log(existing)
+          // console.log(existing)
         if (!existing) {
           await StockLike.create({ stock, hashedIp });
         }
